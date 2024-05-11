@@ -1,0 +1,74 @@
+.header {
+    position: sticky;
+    top: 0px;
+    height: 4rem;
+    background-color: black;
+    color: white;
+}
+
+.name {
+    margin-left: 2rem;
+    margin-top : 1rem;
+    float: left;
+    font-family: 'Eatday', 'Magic Retro', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.head_list {
+    margin-left: 60vw;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    font-size: 1.5rem;
+    font-family: "American Typewriter",'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.head_list li {
+    margin: auto;
+    margin-top: 1.5rem;
+}
+
+
+
+
+
+
+
+/* 
+UNDERLINE
+UNDERLINE
+UNDERLINE
+UNDERLINE
+the underline class makes beautiful underline
+the next 3 properties completes the class
+*/
+
+.underline {
+    display: inline-block;
+    position: relative;
+}
+
+.underline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #cac300;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
